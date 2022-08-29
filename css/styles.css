@@ -30,7 +30,7 @@ h1 {
   align-items: center;
   width: 100%;
   background-color: #3a3a3a;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .header__logo {
@@ -48,6 +48,8 @@ h1 {
 
 #navbarScroll a {
   color: grey;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 .dropdown-menu {
@@ -448,7 +450,7 @@ form {
 .card__productos2 {
   position: relative;
   width: 17rem;
-  height: 24rem;
+  height: 25rem;
   background-color: white;
   border-radius: 10px;
   border: 1px solid grey;
@@ -535,7 +537,7 @@ form {
 .whatsapp {
   position: fixed;
   bottom: 0;
-  right: 100px;
+  right: 2rem;
 }
 
 .whatsapp img {
@@ -603,6 +605,9 @@ form {
   .whatsapp img {
     width: 40px;
     height: 40px;
+  }
+  .whatsapp {
+    right: 0.1rem;
   }
   /*Nosotros*/
   .nosotros img {
@@ -673,8 +678,8 @@ form {
     gap: 4rem;
   }
   .header__logo {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
   }
   .imagen__carrusel {
     width: 89%;
@@ -686,23 +691,23 @@ form {
     grid-column: auto;
   }
   .card__imagen {
-    width: 12rem;
-    height: 12rem;
+    width: 16rem;
+    height: 15rem;
     max-width: 100%;
     margin: auto;
   }
   .card__productos {
-    width: 13rem;
-    height: 17rem;
+    width: 18rem;
+    height: 21rem;
     margin: auto auto;
     margin-top: 3rem;
     max-width: 100%;
   }
   .card__enlace {
     margin-top: 10px;
-    padding-left: 7px;
-    font-weight: 500;
-    font-size: 10px;
+    margin-left: 5rem;
+    font-weight: bolder;
+    font-size: 25px;
     padding: 5px 5px;
   }
   .lista-navegacion a {
@@ -738,8 +743,11 @@ form {
   }
   .card__productos2 {
     width: 13rem;
-    height: 20rem;
+    height: 21rem;
     padding-right: 15px;
+  }
+  .card__productos2 p {
+    font-size: 27px;
   }
 }
 
