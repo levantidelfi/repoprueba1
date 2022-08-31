@@ -4,49 +4,18 @@
 @import "nosotros";
 @import "productos";
 @import "preguntas";
+@import "mixins";
 
 
 
 /*Para todas las secciones del sitio*/
 
 
-@mixin tamano-imagen {
-    width: 15rem;
-    height: 16rem;
-   
-}
-
-.card__imagen{
-    @include tamano-imagen;
-}
-
-.card__imagen2{
-  @include tamano-imagen;
-}
-
-
-.whatsapp {
-    position: fixed;
-    bottom: 0;
-    right: 2rem;
-}
-
-.whatsapp img {
-    width: $ancho-wsp;
-    height: $alto-wsp;
-   
-}
 
 
 
 
-
-
-
-
-
-
-@media screen and (min-width:320px) and (max-width: 767px) {
+@media (max-width: 767px) {
 
     /*Seccion inicio*/
 
@@ -55,7 +24,6 @@
     }
 
     .header{
-        // height: 220px;
         max-width: 100%;
         gap: 4rem;
         padding: 20px;
@@ -72,14 +40,24 @@
         max-width: 100%;
     }
 
+    .conoceh2{
+        font-size: 30px;
+    }
+
+    .cart2 svg{
+
+        width: 2rem;
+        height: 2rem;
+    }
+
     .card__caja{
         grid-template-columns: repeat(2, 1fr);
          grid-column: auto;
     }
     
     .card__imagen{
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         max-width: 100%;
         margin: auto;
         
@@ -89,13 +67,22 @@
     .card__productos{
         
         width: calc($ancho-carduno - 6rem);
-        height: calc($alto-carduno - 5rem);
-        margin: auto auto;
+        height: calc($alto-carduno - 6rem);
+        margin: auto;
+        margin-top: 1rem;
         gap: 1rem; 
+        padding: 10px;
+       
         padding-bottom: 5rem;
+        
        
         max-width: 100%;
     } 
+
+    .card__productos:hover{
+        transform: scale(1.05);
+        transition: all ease-in-out 1s;
+    }
 
     .card__enlace{
         margin-top: 10px;
@@ -106,17 +93,21 @@
     }
 
     .promo{
-         width: 16rem;
-        height: 14rem; 
+         width: 14rem;
+        height: 12rem; 
         max-width: 100%;
         margin-bottom: 18px;
+    }
+
+    .promo:hover{
+        transform: scale(1.07);
+        transition: all ease-in-out 1s;
     }
 
     .card__productos--oferta{
         flex-direction: column;
         align-items: center;
         margin-top: auto;
-        // gap: 10px;
     }
 
     /*se agregar operacion*/
@@ -140,7 +131,8 @@
     .mb-3 input{
         width: 16rem;
     }
-    /*seccion preguntas*/
+
+    /*Preguntas*/
 
     .container-fluid iframe{
         max-width: 100%;
@@ -156,8 +148,27 @@
         font-size: 15px;
     }
     
-    /*seccion contacto*/
+    /*Contacto*/
 
+    .form-1{
+        padding-left: 15px;
+    }
+
+    .form-1 legend{
+        font-size: 20px;
+    }
+
+    .form-1 label{
+        font-size: 14px;
+    }
+    
+    .form-1 p{
+        font-size: 14px;
+    }
+
+    .form__boton{
+        font-size: 12px;
+    }
 
     .form-1 textarea{
         max-width: 100%;
@@ -173,7 +184,24 @@
         margin-left: 10px;
     }
 
-    /*seccion productos*/
+    .contacto h3{
+        font-size: 20px;
+    }
+
+    .contacto2{
+        font-size: 13px;
+    }
+
+    /*Productos*/
+
+    .prod-h2{
+        font-size: 30px;
+    }
+
+    .cart{
+        width: 2rem;
+        height: 2rem;
+    }
 
     .card__caja2{
         grid-template-columns: repeat(2, 1fr);
@@ -190,25 +218,34 @@
     }
 
     .card__productos2{
-        width: 10rem;
-        height: 14rem;
+        width: 9rem;
+        height: 15rem;
         margin: auto auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        padding-left: 1rem;
-        padding-bottom: 3rem;
+        padding-left: 13px;
+        padding-right: 10px;
+        padding-bottom: 4rem;
         max-width: 100%;
     } 
+
+    .card__productos2:hover{
+        transform: scale(1.07);
+        transition: all ease-in-out 1s;
+    }
     
     .card__productos2 p{
-        font-size: 17px;
-        margin-left: 15px;
-        line-height: 0.7;
+        font-size: 18px;
+        line-height: 0.8;
     }
 
     }
 
-    @media screen and (min-width:768px) and (max-width: 1024px) {
+
+
+
+
+    @media (min-width:768px){
      
         /*Inicio*/   
        h1{
@@ -220,7 +257,6 @@
        }    
     
        .header{
-        //   height: 220px;
            gap: 4rem;
        }
     
@@ -260,7 +296,7 @@
                margin-top: 10px;
                margin-left: 5rem;
               font-weight: bolder;
-              font-size: 25px;
+              font-size: 20px;
              padding: 5px 5px;
        }  
        
@@ -275,13 +311,6 @@
         height: 16rem;
         margin-top: 2rem;
     }
-    
-       // .promo{
-       //     width: 10rem;
-       //    height: 9rem; 
-       //     max-width: 100%;
-       //     margin-bottom: 18px;
-       // }
     
       .card__productos--oferta{
        gap: 1rem;

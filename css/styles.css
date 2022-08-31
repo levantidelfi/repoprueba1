@@ -10,6 +10,187 @@
 /*TAMANO CARD1 */
 /* TAMANO IMAGEN CARD1 */
 /* Boton Whatsapp*/
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+}
+
+.whatsapp img {
+  width: 70px;
+  height: 70px;
+}
+
+@media (max-width: 767px) {
+  /*Seccion inicio*/
+  h1 {
+    font-size: 50px;
+  }
+  .header {
+    max-width: 100%;
+    gap: 4rem;
+    padding: 20px;
+  }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .imagen__carrusel {
+    width: 89%;
+    height: 200px;
+    max-width: 100%;
+  }
+  .conoceh2 {
+    font-size: 30px;
+  }
+  .cart2 svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .card__caja {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: auto;
+  }
+  .card__imagen {
+    width: 10rem;
+    height: 10rem;
+    max-width: 100%;
+    margin: auto;
+  }
+  /*operacion aplicada */
+  .card__productos {
+    width: 10rem;
+    height: 16rem;
+    margin: auto;
+    margin-top: 1rem;
+    gap: 1rem;
+    padding: 10px;
+    padding-bottom: 5rem;
+    max-width: 100%;
+  }
+  .card__productos:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 1s;
+  }
+  .card__enlace {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 5px;
+    margin-left: 2rem;
+  }
+  .promo {
+    width: 14rem;
+    height: 12rem;
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+  .promo:hover {
+    transform: scale(1.07);
+    transition: all ease-in-out 1s;
+  }
+  .card__productos--oferta {
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+  }
+  /*se agregar operacion*/
+  .whatsapp img {
+    width: 40px;
+    height: 40px;
+  }
+  .whatsapp {
+    right: 0.1rem;
+  }
+  /*Nosotros*/
+  .nosotros img {
+    width: 80%;
+  }
+  .mb-3 input {
+    width: 16rem;
+  }
+  /*Preguntas*/
+  .container-fluid iframe {
+    max-width: 100%;
+    height: 15rem;
+  }
+  .pregunta {
+    font-size: 17px;
+  }
+  .respuesta {
+    font-size: 15px;
+  }
+  /*Contacto*/
+  .form-1 {
+    padding-left: 15px;
+  }
+  .form-1 legend {
+    font-size: 20px;
+  }
+  .form-1 label {
+    font-size: 14px;
+  }
+  .form-1 p {
+    font-size: 14px;
+  }
+  .form__boton, .form__boton--limpiar, .form__boton--enviar {
+    font-size: 12px;
+  }
+  .form-1 textarea {
+    max-width: 100%;
+  }
+  .form__boton--enviar {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .form__boton--limpiar {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .contacto h3 {
+    font-size: 20px;
+  }
+  .contacto2 {
+    font-size: 13px;
+  }
+  /*Productos*/
+  .prod-h2 {
+    font-size: 30px;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .card__caja2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: auto;
+  }
+  .card__imagen2 {
+    width: 8rem;
+    height: 8rem;
+    max-width: 100%;
+    margin: auto;
+  }
+  .card__productos2 {
+    width: 9rem;
+    height: 15rem;
+    margin: auto auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 13px;
+    padding-right: 10px;
+    padding-bottom: 4rem;
+    max-width: 100%;
+  }
+  .card__productos2:hover {
+    transform: scale(1.07);
+    transition: all ease-in-out 1s;
+  }
+  .card__productos2 p {
+    font-size: 18px;
+    line-height: 0.8;
+  }
+}
 /*Seccion de inicio*/
 * {
   margin: 0;
@@ -60,18 +241,26 @@ h1 {
   background-color: #e7c9c9;
 }
 
-.footer__redes a:hover {
+.cart2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conoceh2 {
   color: black;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  padding: 30px;
+  font-family: "Manrope", sans-serif;
+  font-family: "Square Peg", cursive;
+  margin-top: 5px;
 }
 
-.card__imagen {
-  width: 15rem;
-  height: 16rem;
-}
-
-.card__imagen2 {
-  width: 15rem;
-  height: 16rem;
+.cart2 svg {
+  width: 3rem;
+  height: 3rem;
 }
 
 .imagen__carrusel {
@@ -107,7 +296,7 @@ h1 {
   overflow: hidden;
   margin: auto auto;
   margin-bottom: 3rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-top: 2rem;
   max-width: 100%;
 }
@@ -221,6 +410,10 @@ header {
   text-decoration: none;
   color: #666666;
   font-size: 25px;
+}
+
+.footer__redes a:hover {
+  color: black;
 }
 
 /*margen entre secciones*/
@@ -354,7 +547,7 @@ header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-align: center;
   color: #363434;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 2rem;
   margin-left: 2rem;
@@ -427,8 +620,7 @@ form {
 .prod-h2 {
   color: black;
   font-weight: bolder;
-  font-size: 40px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
   text-align: center;
   padding: 30px;
   font-family: "Manrope", sans-serif;
@@ -500,7 +692,7 @@ form {
 .pregunta {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 9px;
 }
@@ -509,7 +701,7 @@ form {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-align: center;
   color: #363434;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   /* margin-left: 1rem;
   margin-right: 1rem;
@@ -523,7 +715,6 @@ form {
   margin: auto;
 }
 
-/*Para todas las secciones del sitio*/
 .card__imagen {
   width: 15rem;
   height: 16rem;
@@ -534,18 +725,8 @@ form {
   height: 16rem;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 0;
-  right: 2rem;
-}
-
-.whatsapp img {
-  width: 70px;
-  height: 70px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/*Para todas las secciones del sitio*/
+@media (max-width: 767px) {
   /*Seccion inicio*/
   h1 {
     font-size: 50px;
@@ -564,24 +745,37 @@ form {
     height: 200px;
     max-width: 100%;
   }
+  .conoceh2 {
+    font-size: 30px;
+  }
+  .cart2 svg {
+    width: 2rem;
+    height: 2rem;
+  }
   .card__caja {
     grid-template-columns: repeat(2, 1fr);
     grid-column: auto;
   }
   .card__imagen {
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
     max-width: 100%;
     margin: auto;
   }
   /*operacion aplicada */
   .card__productos {
     width: 10rem;
-    height: 17rem;
-    margin: auto auto;
+    height: 16rem;
+    margin: auto;
+    margin-top: 1rem;
     gap: 1rem;
+    padding: 10px;
     padding-bottom: 5rem;
     max-width: 100%;
+  }
+  .card__productos:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 1s;
   }
   .card__enlace {
     margin-top: 10px;
@@ -591,10 +785,14 @@ form {
     margin-left: 2rem;
   }
   .promo {
-    width: 16rem;
-    height: 14rem;
+    width: 14rem;
+    height: 12rem;
     max-width: 100%;
     margin-bottom: 18px;
+  }
+  .promo:hover {
+    transform: scale(1.07);
+    transition: all ease-in-out 1s;
   }
   .card__productos--oferta {
     flex-direction: column;
@@ -616,7 +814,7 @@ form {
   .mb-3 input {
     width: 16rem;
   }
-  /*seccion preguntas*/
+  /*Preguntas*/
   .container-fluid iframe {
     max-width: 100%;
     height: 15rem;
@@ -627,7 +825,22 @@ form {
   .respuesta {
     font-size: 15px;
   }
-  /*seccion contacto*/
+  /*Contacto*/
+  .form-1 {
+    padding-left: 15px;
+  }
+  .form-1 legend {
+    font-size: 20px;
+  }
+  .form-1 label {
+    font-size: 14px;
+  }
+  .form-1 p {
+    font-size: 14px;
+  }
+  .form__boton, .form__boton--enviar, .form__boton--limpiar {
+    font-size: 12px;
+  }
   .form-1 textarea {
     max-width: 100%;
   }
@@ -639,7 +852,20 @@ form {
     font-size: 12px;
     margin-left: 10px;
   }
-  /*seccion productos*/
+  .contacto h3 {
+    font-size: 20px;
+  }
+  .contacto2 {
+    font-size: 13px;
+  }
+  /*Productos*/
+  .prod-h2 {
+    font-size: 30px;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
   .card__caja2 {
     grid-template-columns: repeat(2, 1fr);
     grid-column: auto;
@@ -651,22 +877,26 @@ form {
     margin: auto;
   }
   .card__productos2 {
-    width: 10rem;
-    height: 14rem;
+    width: 9rem;
+    height: 15rem;
     margin: auto auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding-left: 1rem;
-    padding-bottom: 3rem;
+    padding-left: 13px;
+    padding-right: 10px;
+    padding-bottom: 4rem;
     max-width: 100%;
   }
+  .card__productos2:hover {
+    transform: scale(1.07);
+    transition: all ease-in-out 1s;
+  }
   .card__productos2 p {
-    font-size: 17px;
-    margin-left: 15px;
-    line-height: 0.7;
+    font-size: 18px;
+    line-height: 0.8;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   /*Inicio*/
   h1 {
     font-size: 60px;
@@ -707,7 +937,7 @@ form {
     margin-top: 10px;
     margin-left: 5rem;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
     padding: 5px 5px;
   }
   .lista-navegacion a {

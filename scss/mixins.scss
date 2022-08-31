@@ -1,0 +1,13 @@
+@mixin tamano-imagen {
+    width: 15rem;
+    height: 16rem;
+   
+}
+
+.card__imagen{
+    @include tamano-imagen;
+}
+
+.card__imagen2{
+  @include tamano-imagen;
+}
