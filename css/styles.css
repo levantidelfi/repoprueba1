@@ -21,7 +21,7 @@
   height: 70px;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   /*Seccion inicio*/
   h1 {
     font-size: 50px;
@@ -348,7 +348,6 @@ h1 {
   padding-left: 20px;
   margin-top: 10px;
   margin-left: 3rem;
-  /* margin: auto;   */
   color: #000000;
   text-decoration: none;
   background: white;
@@ -574,44 +573,6 @@ header {
   justify-content: center;
 }
 
-form {
-  margin: auto;
-  /* display: flex;
-  justify-content: center;
-  text-align: center; */
-  /* text-align: center; */
-}
-
-.form-check {
-  display: flex;
-  justify-items: center;
-  max-width: 100%;
-}
-
-.form-check legend {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #191919;
-  /* display: flex; */
-  /* justify-content: center; */
-}
-
-.mb-3 input {
-  width: 25rem;
-}
-
-.form-check p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.container {
-  margin-top: 30px;
-}
-
-.container fieldset {
-  border-color: grey;
-  border-style: solid;
-}
-
 /*Seccion productos*/
 .productos2 {
   background-color: #e7c9c9;
@@ -703,9 +664,6 @@ form {
   color: #363434;
   font-size: 18px;
   line-height: 1.8;
-  /* margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 2rem; */
 }
 
 .container-fluid iframe {
@@ -726,7 +684,7 @@ form {
 }
 
 /*Para todas las secciones del sitio*/
-@media (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   /*Seccion inicio*/
   h1 {
     font-size: 50px;
@@ -811,9 +769,6 @@ form {
   .nosotros img {
     width: 80%;
   }
-  .mb-3 input {
-    width: 16rem;
-  }
   /*Preguntas*/
   .container-fluid iframe {
     max-width: 100%;
@@ -896,7 +851,7 @@ form {
     line-height: 0.8;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /*Inicio*/
   h1 {
     font-size: 60px;

@@ -1,5 +1,6 @@
 @import "variables";
 
+
 .whatsapp {
     position: fixed;
     bottom: 0;
@@ -13,7 +14,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media screen and (min-width:320px) and (max-width: 767px){
 
     /*Seccion inicio*/
 
@@ -113,6 +114,7 @@
     .whatsapp img {
         width: calc($ancho-wsp - 30px);
         height: calc($alto-wsp - 30px);
+        
     }
 
     .whatsapp{
@@ -412,7 +414,6 @@ h1{
     padding-left: 20px;
     margin-top: 10px;
     margin-left: 3rem;
-    /* margin: auto;   */
     color: #000000;
     text-decoration: none;
     background: white;
