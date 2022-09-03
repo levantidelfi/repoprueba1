@@ -747,6 +747,7 @@ header {
   /*Nosotros*/
   .nosotros img {
     max-width: 100%;
+    width: 90%;
   }
   /*productos*/
   .card__imagen2 {
